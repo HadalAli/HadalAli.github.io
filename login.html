@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halaman Login</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="glass-box">
+            <nav>
+                <h2 class="nav">WEL<span>COME</span></h2>
+            </nav>
+            <div class="box">
+                <div class="login-box">
+                    <form action="index.html" method="post" id="form-signin" class="container-form">
+                    <h1>LOG<span>IN</span></h1>
+                    <h4>Email :</h4>
+                    <input type="email" id="email" name="" placeholder="Enter your email" autocomplete="off">
+                    <h4>Password :</h4>
+                    <input type="password" id="password" name="" placeholder="Enter your password" autocomplete="off">
+                    <h5><a href="#">Forgot Password</a></h5>
+                    <button type="button" class="submit" onclick="login()">LOGIN</button>
+                    </form>
+                </div>
+
+                <div class="desc">
+                    <h1>Welcome To <span> My Website</span></h1>
+                    <p>Hi, Welcome To My Website. website ini adalah sebuah website pribadi dan berisi
+                        mengenai informasi pribadi seperti nama, nim, kelas, hoby dan cita-cita. selain itu
+                         terdapat juga informasi-informasi lainnya.
+                          </p>
+                          <br>
+                          <p>Silahkan Login Pada Halaman Ini!</p>
+                          <br>
+
+                         <button type="button"><a href="https://wa.me/qr/3X2254QYCLKDC1" class="link">Contact Me</button></a>  
+
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+            function login(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if (email == "hadaljr66@gmail.com" && password == "12345678"){
+                    window.location.href="index.html";
+                } else {
+                    alert("email dan password anda salah, silahkan coba lagi!");
+                }
+            }
+        </script>
+    </body>
+</html>

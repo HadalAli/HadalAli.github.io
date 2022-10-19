@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/homestyle.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="text-info">
+        <h1 class="judul">Selamat datang</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vel. Excepturi itaque corporis id, sequi,
+            ipsum
+            rem cum quia suscipit quod, deleniti ipsam voluptatem architecto voluptates fuga. Illo, in perferendis!</p>
+    </div>
+    <form action="index.html" method="post" id="form-signin" class="container-form">
+        <h1 class="form-heading">Masuk dengan akun Anda</h1>
+        <input type=" text" id="username" placeholder="username" required autocomplete="off">
+        <input type="password" id="password" autocomplete="off" placeholder="password" class="tipe-password" required>
+        <div class="contaier-tampil-pass">
+            <input type="checkbox" class="tampil-password" onclick="tampilPassword()">
+            <label for="tampil-password">Tampilkan password</label>
+        </div>
+        <div class="buat-dan-login">
+            <p class="buat-akun" id="buat-akun">Buat akun</p>
+            <button type="submit">Masuk</button>
+        </div>
+    </form>
+    <form action="" method="post" id="form-signup" class="container-form">
+        <h1 class="form-heading">Buat akun Anda</h1>
+        <input type=" text" id="nama" placeholder="nama" required autocomplete="off">
+        <input type=" text" id="username-daftar" placeholder="username" required autocomplete="off">
+        <input type="password" autocomplete="off" id="password-daftar" placeholder="password" class="tipe-password"
+            required>
+        <div class="contaier-tampil-pass">
+            <input type="checkbox" class="tampil-password" onclick="tampilPasswordDaftar()">
+            <label for="tampil-password">Tampilkan password</label>
+        </div>
+        <div class="buat-dan-login">
+            <p class="buat-akun" id="kembali">Kembali</p>
+            <button type="submit">Daftar</button>
+        </div>
+    </form>
+    <script src="./script/home.js"></script>
+</body>
+
+</html>

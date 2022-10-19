@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>website muh. hadal ali sam</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">WEL<span>COME</span></h2>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="https://youtube.com/channel/UCodr_UDf5CEOP05QDF66Aug" class="btn">subscribe</a>
+        </nav>
+
+        <section class="contact">
+            <div class="contact-form">
+                <h1>Contact <span>Me</span></h1>
+                <p>I am available for freelance work. Connect with me via phone : 081242900130 or email :
+                    hadaljr@66gmail.com</p>
+                <form id="testing">
+                    <input type="text" placeholder="Nama Kamu" id="nama-kontak" required>
+                    <input type="email" name="email" id="email-kontak" placeholder="E-mail" required>
+                    <input type="text" id="subjek" placeholder="Ketik Sebuah Subjek" required>
+                    <textarea name="" id="pesan" cols="30" rows="10" placeholder="Pesan Kamu" required></textarea>
+                    <button type="submit" class="btn" value="Submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="contact-img">
+                <img src="foto2fix.jpeg">
+
+            </div>
+        </section>
+        <script>
+            document.getElementById('testing').addEventListener('submit', function (e) {
+                e.preventDefault()
+                window.alert("Pesan Terkirim!")
+                var nama = document.getElementById("nama-kontak")
+                var email = document.getElementById("email-kontak")
+                var subjek = document.getElementById("subjek")
+                var textarea = document.getElementById("pesan")
+                nama.value = ""
+                email.value = ""
+                subjek.value = ""
+                textarea.value = ""
+
+            })
+           
+        </script>
+</body>
+
+</html>
